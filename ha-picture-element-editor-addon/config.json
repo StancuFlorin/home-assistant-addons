@@ -1,0 +1,19 @@
+{
+  "name": "Picture Element Editor",
+  "version": "1.0.0",
+  "slug": "picture_element_editor",
+  "description": "A web-based picture element editor.",
+  "startup": "services",
+  "boot": "auto",
+  "webui": "http://[HOST]:[PORT:8000]",
+  "ports": {
+    "8000/tcp": 8000
+  },
+  "ingress": true,
+  "ingress_port": 8000,
+  "panel_icon": "mdi:image",
+  "panel_title": "Picture Editor",
+  "arch": ["amd64", "armv7", "aarch64"],
+  "options": {},
+  "schema": {}
+} 

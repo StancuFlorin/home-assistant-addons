@@ -1,0 +1,89 @@
+﻿
+body {
+    font-family: Verdana;
+    text-align: center;
+}
+
+.part {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.container {
+    text-align: left;
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    min-width: 400px;
+    border: 1px solid #ddd;
+    height: 300px;
+    position: relative;
+}
+
+.container:after {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #999;
+}
+
+.container.code {
+    overflow-y: auto;
+}
+
+.snap-container {
+    height: 20px;
+    width: 100%;
+    background-color: darkgrey;
+    margin-top: 25px;
+    position: absolute;
+}
+.snap-container:after {
+    display: block;
+    content: 'snap-container';
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.drag {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    background-color: #ffffc8;
+    cursor: pointer;
+    position: absolute;
+}
+        
+.drag.selected {
+    background-color: #b6f3b6;
+}
+
+#c1:after {
+    content: 'Smart guides';
+}
+#c2:after {
+    content: 'Smart guides + Multidraggable';
+}
+#c3:after {
+    content: 'Smart guides with custom class + snap without guides';
+}
+
+#c2 .smart-guide {
+    border-color: black;
+    border-style: dashed;
+}
+
+#c3 .guide {
+    border-color: blue;
+    border-style: dotted;
+}
+
+pre {
+    white-space: pre-wrap;
+    margin: 2px 5px;
+}
