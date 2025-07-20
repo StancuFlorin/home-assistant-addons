@@ -31,7 +31,7 @@ You can easily run the editor as a standalone container using Docker Compose:
    version: '3.8'
    services:
      ha-picture-element-editor:
-       image: ghcr.io/StancuFlorin/ha-picture-element-editor:latest
+       image: ghcr.io/stancuflorin/ha-picture-element-editor:latest
        container_name: ha-picture-element-editor
        ports:
          - "8080:80"
