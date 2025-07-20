@@ -1,8 +1,10 @@
-name: Build and Push Docker image to GHCR
+name: Build Picture Element Editor
 
 on:
   push:
     branches: [main]
+    paths:
+      - 'ha-picture-element-editor-addon/**'
   workflow_dispatch:
 
 jobs:
