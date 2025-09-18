@@ -12,6 +12,11 @@
     "80/tcp": 80,
     "443/tcp": 443
   },
+  "options": {
+    "PGID": 1,
+    "PUID": 1,
+    "TIMEOUT": "60000"
+  },
   "ingress": false,
   "panel_icon": "mdi:image",
   "panel_title": "Nginx Proxy Manager",
