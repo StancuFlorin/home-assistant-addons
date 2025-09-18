@@ -1,0 +1,1 @@
+FROM jc21/nginx-proxy-manager:2.12.6
