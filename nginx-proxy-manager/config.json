@@ -1,6 +1,7 @@
 {
   "name": "Nginx Proxy Manager",
   "version": "2.12.6",
+  "image": "jc21/nginx-proxy-manager:2.12.6",
   "slug": "nginx_proxy_manager",
   "description": "Docker container for managing Nginx proxy hosts with a simple, powerful interface",
   "startup": "services",
