@@ -1,0 +1,20 @@
+{
+  "name": "Nginx Proxy Manager",
+  "version": "2.12.6",
+  "slug": "nginx_proxy_manager",
+  "description": "Docker container for managing Nginx proxy hosts with a simple, powerful interface",
+  "startup": "services",
+  "boot": "auto",
+  "webui": "http://[HOST]:[PORT:81]",
+  "ports": {
+    "81/tcp": 81,
+    "80/tcp": 80,
+    "443/tcp": 443
+  },
+  "ingress": false,
+  "panel_icon": "mdi:image",
+  "panel_title": "Nginx Proxy Manager",
+  "arch": ["amd64", "armv7", "aarch64"],
+  "options": {},
+  "schema": {}
+} 
