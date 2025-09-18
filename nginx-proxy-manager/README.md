@@ -4,5 +4,5 @@ Just the latest version of Nginx Proxy Manager without anything extra.
 
 ## Default Administrator User
 
-Email: admin@example.com
+Email: admin@example.com  
 Password: changeme
