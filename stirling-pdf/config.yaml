@@ -1,0 +1,24 @@
+name: Stirling-PDF
+description: Run the latest local instance of the Stirling-PDF web-based PDF editor.
+version: "1.0.0"
+slug: stirling_pdf
+init: false
+startup: services
+boot: auto
+arch:
+  - amd64
+  - aarch64
+url: "https://github.com/Stirling-Tools/Stirling-PDF"
+ports:
+  8080/tcp: 8080
+volumes:
+  - config:rw
+  - share:rw
+  - addons_config:rw
+  - media:rw
+options:
+  DISABLE_ADDITIONAL_FEATURES: false
+  LANGS: en_GB
+schema:
+  DISABLE_ADDITIONAL_FEATURES: bool
+  LANGS: str
