@@ -1,0 +1,31 @@
+{
+    "name": "Stirling-PDF",
+    "version": "1.0.0",
+    "slug": "stirling_pdf",
+    "description": "Stirling PDF is a robust, locally hosted web-based PDF manipulation tool.",
+    "startup": "services",
+    "boot": "auto",
+    "arch": [
+        "amd64",
+        "aarch64"
+    ],
+    "init": false,
+    "map": [
+        "config:rw",
+        "share:rw",
+        "addons_config:rw",
+        "media:rw"
+    ],
+    "ports": {
+        "8080/tcp": 8080
+    },
+    "options": {
+        "DISABLE_ADDITIONAL_FEATURES": false,
+        "LANGS": "en_GB"
+    },
+    "schema": {
+        "DISABLE_ADDITIONAL_FEATURES": "bool",
+        "LANGS": "str"
+    },
+    "url": "https://github.com/Stirling-Tools/Stirling-PDF"
+}
