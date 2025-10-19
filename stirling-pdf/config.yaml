@@ -13,12 +13,11 @@ ports:
   8080/tcp: 8080
 volumes:
   - config:rw
-  - share:rw
-  - addons_config:rw
-  - media:rw
 options:
   DISABLE_ADDITIONAL_FEATURES: false
   LANGS: en_GB
+  CONFIG_LOCATION: /config/addons_config/stirling_pdf
 schema:
   DISABLE_ADDITIONAL_FEATURES: bool
   LANGS: str
+  CONFIG_LOCATION: str
